@@ -1,73 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Gill sans', sans-serif;
-    background-color: #ffffff;
-    color: #26364a;
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+    background-color: #f4f7fb;
+    color: #263c59;
+    margin: 0;
 }
+
 .navbar {
-    padding: 15px;
-    background-color: white !important;
-    border-bottom: 2px solid #d6b66c;
+    background-color: #17365d !important;
+    padding: 18px 5%;
+    box-shadow: 0px 3px 12px #00000020;
 }
+
 .navbar-brand {
-    font-family: Gill Sans, sans-serif;
-    color: #e5c477 !important;
+    color: white !important;
+    font-size: 25px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
+
 .nav-link {
-    color: #26364a !important;
+    color: #dce8f7 !important;
+    font-size: 17px;
+    margin-left: 20px;
+    transition: 0.3s;
 }
-.nav-link:hover {
-    color: #b08d45 !important;
+
+.nav-link:hover,
+.nav-link.active {
+    color: white !important;
+    border-bottom: 2px solid #a9d5f5;
 }
+
 .welcome {
-    background-color: #f4f1e9;
-    padding: 65px 20px;
-    text-align: left;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/a9259b22-04aa-4cb7-900a-c12edeacb745/DSC06837.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px 20px;
+    text-align: center;
+    color: white;
 }
+
 .welcome h1 {
-    font-family: Georgia, serif;
-    color: #172b4d;
+    font-size: 50px;
+    font-weight: bold;
+    color: #102b4e;
+    margin-bottom: 15px;
 }
-h2 {
-    color: #263b59;
+
+.welcome h4 {
+    font-size: 25px;
+    color: l;
 }
-.card {
-    background: white;
-    border: 1px solid #d9d9d9;
-    border-radius: 3px;
-    transition: 0.2s;
+
+.welcome p {
+    font-size: 19px;
+    color: whitesmoke;
+    margin: 20px 0 30px;
 }
-.card h5 {
-    color: #263b59;
+
+h1, h2, h3 {
+    color: #17365d;
     font-weight: bold;
 }
-.card p {
-    color: #66645f;
+
+h1 {
+    margin-bottom: 20px;
 }
-.card:hover {
-    border-color: #b08d45;
+
+p {
+    color: #526579;
+    line-height: 1.8;
+    font-size: 17px;
 }
-.contact {
-    background-color: #f4f1e9;
+
+.container {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+
 .btn-primary {
-    background-color: #263b59;
-    border-color: #263b59;
+    background-color: #245b91 !important;
+    border: none !important;
     color: white;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #b08d45;
-    border-color: #b08d45;
-    color: white;
-}
-.btn-outline-primary {
-    color: #263b59;
-    border-color: #b08d45;
+    background-color: #17365d !important;
+    transform: translateY(-2px);
 }
 
-.btn-outline-primary:hover {
-    background-color: #263b59;
-    border-color: #263b59;
-    color: white;
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #1e3c6414;
+}
+
+.form-label {
+    color: #294766;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #d8e3ef;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .welcome {
+        padding: 85px 20px;
+    }
+
+    .welcome h1 {
+        font-size: 34px;
+    }
+
+    .welcome h4 {
+        font-size: 20px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 22px;
+    }
 }
